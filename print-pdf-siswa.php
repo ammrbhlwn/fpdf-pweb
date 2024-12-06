@@ -23,9 +23,9 @@ $pdf->Cell(70, 8, 'Sekolah Asal', 1, 1, 'C');
 $pdf->SetFont('Arial', '', 10);
 include 'config.php';
 $sql = "SELECT * FROM calon_siswa";
-$mahasiswa = mysqli_query($db, $sql);
+$siswa = mysqli_query($db, $sql);
 
-while ($row = mysqli_fetch_array($mahasiswa)) {
+while ($row = mysqli_fetch_array($siswa)) {
     $pdf->Cell(60, 8, $row['nama'], 1, 0, 'C');
     $pdf->Cell(60, 8, $row['alamat'], 1, 0, 'C');
     $pdf->Cell(40, 8, $row['jenis_kelamin'], 1, 0, 'C');

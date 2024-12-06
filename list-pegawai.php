@@ -33,7 +33,10 @@ while ($pegawai = mysqli_fetch_assoc($query)) {
 	</header>
 
 	<main>
-		<button class="daftar" onclick="openModal()">Daftar Baru</button>
+		<div class="cta">
+			<button class="daftar" onclick="openModal()">Daftar Baru</button>
+			<a href="print-pdf-pegawai.php" target="_blank">Cetak Pdf</a>
+		</div>
 
 		<table class="table">
 			<tr>
