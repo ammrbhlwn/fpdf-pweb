@@ -1,0 +1,255 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-block: 1rem;
+}
+
+.pendaftar {
+    cursor: pointer;
+    background-color: #007BFF;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid #007BFF;
+    width: fit-content;
+}
+
+.daftar, .cta > a {
+    cursor: pointer;
+    background-color: #3512fc;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    width: fit-content;
+    &:hover {
+    background-color: #2e10d2;
+    }
+}
+
+.pendaftar:hover {
+    border: 2px solid #007BFF;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    color: #007BFF;
+    font-size: 1rem;
+}
+
+.modal-container {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; 
+    max-width: 500px; 
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.register-form {
+    display: flex;
+    gap: 1rem;
+}
+
+.send {
+    width: 100%;
+    cursor: pointer;
+    background-color: #007BFF;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid #007BFF;
+}
+
+
+.send:hover {
+    background-color: #f4f4f4;
+    color: #007BFF;
+}
+
+.status {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+
+.edit {
+    cursor: pointer;
+    background-color: #e5cc12;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid #e5cc12;
+}
+
+
+.edit:hover {
+    background-color: #f4f4f4;
+    color: #e5cc12;
+}
+
+.delete {
+    cursor: pointer;
+    background-color: #e51212;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid #e51212;
+}
+
+
+.delete:hover {
+    background-color: #f4f4f4;
+    color: #e51212;
+}
+
+.back {
+    width: fit-content;
+    cursor: pointer;
+    background-color: #007BFF;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid #007BFF;
+}
+
+
+.back:hover {
+    background-color: #f4f4f4;
+    color: #007BFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 2rem;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
